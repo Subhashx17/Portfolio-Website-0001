@@ -61,6 +61,7 @@ ul {
 }
 
 .lbl {
+    
     font: 400 13px var(--mono);
     color: var(--mute);
 }
@@ -68,6 +69,7 @@ ul {
 h1,
 h2,
 h3 {
+    
     font-family: var(--display);
     font-weight: 800;
     letter-spacing: -0.035em;
@@ -172,16 +174,20 @@ main {
 }
 
 .head {
+    
     padding: clamp(24px, 6vw, 80px) 0 clamp(40px, 7vw, 100px);
 }
 
 .head h1 {
+    
     font-size: clamp(52px, 12vw, 190px);
 }
 
 .head .lbl {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: block;
     margin-bottom: 20px;
+    font-size: medium;
 }
 
 .btn {
