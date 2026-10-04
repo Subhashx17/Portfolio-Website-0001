@@ -1,0 +1,13 @@
+/* WebGL fluid glow layer (see src/js/glow.js) */
+.glow-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 95;
+  pointer-events: none;
+}
+
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .glow-canvas { display: none !important; }
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=DM+Sans:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/css/styles.css"><link rel="stylesheet" href="src/css/glow.css"></head>
+<body class="home" data-page="home" data-root="">
+<main id="main"><section class="stage" id="stage"><div class="pin" id="pin">
+<div class="h-head" id="hHead"><h1 class="h-name" data-bind="profile.name"></h1><p class="h-role" id="hRole" data-bind="profile.role"></p></div>
+<div class="h-photo" id="hPhoto" role="img" aria-label="Portrait"></div>
+<div class="h-col" id="hCol">
+ <dl class="h-meta"><div><dt class="lbl">College</dt><dd data-bind="profile.college"></dd></div><div><dt class="lbl">Year</dt><dd data-bind="profile.year"></dd></div><div><dt class="lbl">Role</dt><dd data-bind="profile.role"></dd></div></dl>
+ <p class="h-intro" data-bind="profile.introduction"></p>
+ <div><span class="lbl">Interests</span><ul class="chips" data-chips="profile.interests"></ul></div>
+ <div><nav class="h-go" aria-label="Explore"><a data-route="projects">Projects</a><a data-route="tech-stack">Tech Stack</a><a data-route="contact">Contact</a></nav><div class="soc" id="hSoc"></div></div>
+</div>
+<p class="h-hint" id="hHint">Scroll</p></div></section></main>
+<script src="src/data/profile.js"></script><script src="src/data/projects.js"></script><script src="src/data/skills.js"></script><script src="src/data/socials.js"></script>
+<script src="src/js/glow.js"></script><script src="src/js/app.js"></script></body></html>
