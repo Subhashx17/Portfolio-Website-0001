@@ -394,26 +394,15 @@ main {
     }
 
     .stage {
+    height: 380vh;
     position: relative;
-    }
 
-    .stage::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-image: url("../../assets/images/waves.png");
-        background-repeat: repeat;
-        background-size: 500px auto;
-        opacity: 0.18;
-        pointer-events: none;
-        z-index: 0;
+    background-image: url("../../assets/images/waves.png");
+    background-repeat: repeat;
+    background-size: 500px auto;
+    background-blend-mode: soft-light;
     }
-
-    .stage > * {
-        position: relative;
-        z-index: 1;
-    }
-
+    
     .pin {
         position: sticky;
         top: 0;
