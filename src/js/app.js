@@ -87,7 +87,7 @@ if(stage&&mq.matches){
     photo.style.transform=`translate(${lerp(0,W*.05-nl,b)}px,${lerp(0,y1+hh*.4+28-nt,b)}px) scale(${lerp(1,.62,b)})`;
     [[.3,.44],[.44,.58],[.58,.7],[.76,.88]].forEach(([s,e],i)=>{const o=seg(p,s,e),n=col[i];n.style.opacity=o;n.style.transform=`translateY(${(1-o)*16}px)`;n.style.pointerEvents=o>.6?'auto':'none'});
     hint.style.opacity=1-seg(p,0,.06);
-    stage.style.background = 'rgb(' + colorAt(p).join(',') + ')'}
+    stage.style.backgroundColor = 'rgb(' + colorAt(p).join(',') + ')'}
   const req=()=>{if(!ticking){ticking=true;requestAnimationFrame(frame)}};
   addEventListener('scroll',req,{passive:true});addEventListener('resize',measure);
   if(document.fonts)document.fonts.ready.then(measure);measure();
