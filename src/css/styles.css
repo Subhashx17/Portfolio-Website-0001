@@ -9,7 +9,7 @@
     --peach: #F9DCCB;
     --mint: #D8EBDD;
 
-    --accent: #783c00;
+    --accent: #780026;
     /* change this one value to retheme the accent */
 
     --display: 'Bricolage Grotesque', system-ui, sans-serif;
@@ -398,10 +398,11 @@ main {
     height: 380vh;
     position: relative;
 
-    background-image: url("../../assets/images/waves.png");
+    background-image: 
+        linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)) ,url("../../assets/images/waves.png" );
     background-repeat: repeat;
     background-size: 500px auto;
-    background-blend-mode: soft-light;
+    background-blend-mode: normal;
     }
 
     .pin {
