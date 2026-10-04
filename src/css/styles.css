@@ -9,7 +9,7 @@
     --peach: #F9DCCB;
     --mint: #D8EBDD;
 
-    --accent: #90002e;
+    --accent: #783c00;
     /* change this one value to retheme the accent */
 
     --display: 'Bricolage Grotesque', system-ui, sans-serif;
@@ -36,8 +36,8 @@ body {
     background-color: var(--bg);
     background-image:
         linear-gradient(
-            rgba(248, 244, 236, 0.95),
-            rgba(248, 244, 236, 0.95)
+            rgba(248, 244, 236, 0.9),
+            rgba(248, 244, 236, 0.9)
         ),
         url("../../assets/images/waves.png");
     background-repeat: repeat;
@@ -68,8 +68,9 @@ ul {
     padding-right: var(--pad);
 }
 
+
+
 .lbl {
-    
     font: 400 13px var(--mono);
     color: var(--mute);
 }
