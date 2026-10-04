@@ -37,7 +37,7 @@ body {
     background-image:
         linear-gradient(
             rgba(248, 244, 236, 0.82),
-            rgba(248, 244, 236, 0.82)
+            rgba(248, 244, 236, 0.9)
         ),
         url("../../assets/images/waves.png");
     background-repeat: repeat;
@@ -402,7 +402,7 @@ main {
     background-size: 500px auto;
     background-blend-mode: soft-light;
     }
-    
+
     .pin {
         position: sticky;
         top: 0;
@@ -429,7 +429,7 @@ main {
     }
 
     .h-name {
-        font-size: 13vw;
+        font-size: 10vw;
     }
 
     .h-photo {

@@ -10,10 +10,10 @@
   /* ---------------- tweak here ---------------- */
   const CFG = {
     color: '255,255,255',  // white only
-    life: 620,             // ms the tail takes to vanish (longer = longer slash)
+    life: 1200,             // ms the tail takes to vanish (longer = longer slash)
     maxWidth: 64,          // thickest part of the slash (px)
     follow: 0.38,          // 0-1, how tightly it tracks the cursor (lower = smoother/lazier)
-    glow: 64,              // softness of the halo (px blur)
+    glow: 100,              // softness of the halo (px blur)
     coreAlpha: 0.6,        // brightness of the slash body
     haloAlpha: 0.45,       // brightness of the soft halo
     speedFull: 38,         // px/frame at which the slash reaches full width
@@ -114,8 +114,8 @@
     if (pts.length > 80) pts.splice(0, pts.length - 80);
 
     if (pts.length > 2) {
-      fillRibbon(ribbon(pts, 2.4), CFG.haloAlpha, CFG.glow);   // wide soft halo
-      fillRibbon(ribbon(pts, 1.0), CFG.coreAlpha, CFG.glow * 0.7); // clean slash body
+      fillRibbon(ribbon(pts, 1.6), CFG.haloAlpha, CFG.glow);   // wide soft halo
+      fillRibbon(ribbon(pts, 0.7), CFG.coreAlpha, CFG.glow * 0.9); // clean slash body
     }
 
     if (pts.length > 0 || (target.has && Math.hypot(target.x - smooth.x, target.y - smooth.y) > 0.5)) {
