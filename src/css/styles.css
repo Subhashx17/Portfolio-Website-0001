@@ -395,14 +395,14 @@ main {
     }
 
     .stage {
-    height: 380vh;
-    position: relative;
+        height: 380vh;
+        position: relative;
 
-    background-image: 
-        linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)) ,url("../../assets/images/waves.png" );
-    background-repeat: repeat;
-    background-size: 500px auto;
-    background-blend-mode: normal;
+        background-color: #DDD7CC;
+        background-image: url("../../assets/images/waves.png");
+        background-repeat: repeat;
+        background-size: 500px auto;
+        background-blend-mode:soft-light;
     }
 
     .pin {
