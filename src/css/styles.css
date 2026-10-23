@@ -137,8 +137,8 @@ h3 {
 }
 
 .nav {
-    position: relative;
-    inset: calc(18px + env(safe-area-inset-top, 0px)) 1.25vw auto;
+    position: fixed;
+    inset: calc(24px + env(safe-area-inset-top, 0px)) 1.25vw auto;
     z-index: 90;
     display: flex;
     justify-content: space-between;
