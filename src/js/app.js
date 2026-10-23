@@ -9,6 +9,26 @@ const get=p=>p.split('.').reduce((o,k)=>o&&o[k],S);
 const asset=v=>/^(https?:|data:|\/)/.test(v)?v:ROOT+v;
 
 document.querySelectorAll('[data-bind]').forEach(n=>n.textContent=get(n.dataset.bind));
+/* Hero name: Anime.js ScrambleText */
+if (PAGE === 'home' && !RM) {
+  import('https://cdn.jsdelivr.net/npm/animejs/+esm')
+    .then(({ animate, scrambleText }) => {
+      const heroName = document.querySelector('.h-name');
+
+      if (!heroName) return;
+
+      animate(heroName, {
+        innerHTML: scrambleText({
+          chars: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
+          from: 'left',
+          duration: 1000,
+          settleDuration: 200,
+          ease: 'Linear',
+        }),
+      });
+    })
+    .catch(error => console.error('ScrambleText failed:', error));
+}
 document.querySelectorAll('[data-chips]').forEach(n=>get(n.dataset.chips).forEach(v=>n.appendChild(el('li',0,v))));
 document.title=S.profile.name+' · '+({home:'Home',projects:'Projects','tech-stack':'Tech Stack',contact:'Contact'}[PAGE]);
 
